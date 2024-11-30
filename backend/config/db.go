@@ -705,32 +705,4 @@ func SetupDatabase() {
 	db.FirstOrCreate(&TicketBooking4, entity.TicketBooking{QuantityCustomer: 1})
 	db.FirstOrCreate(&TicketBooking5, entity.TicketBooking{QuantityCustomer: 3})
 
-	//rent
-	Rent1 := entity.Rent{
-		Quantity:   2,
-		RentDate:   time.Date(2018, 5, 15, 0, 0, 0, 0, time.UTC),
-		StartTime:  time.Date(2018, 5, 15, 9, 0, 0, 0, time.UTC),  // เวลาเริ่มต้น 9:00 AM
-		EndTime:    time.Date(2018, 5, 15, 11, 0, 0, 0, time.UTC), // เวลาสิ้นสุด 11:00 AM
-		TotalPrice: 40,
-
-		TicketBookingID: &TicketBooking1.ID,
-	}
-
-	Rent2 := entity.Rent{
-		Quantity:   1,
-		RentDate:   time.Date(2018, 5, 15, 0, 0, 0, 0, time.UTC),
-		StartTime:  time.Date(2018, 5, 15, 9, 0, 0, 0, time.UTC),  // เวลาเริ่มต้น 9:00 AM
-		EndTime:    time.Date(2018, 5, 15, 11, 0, 0, 0, time.UTC), // เวลาสิ้นสุด 11:00 AM
-		TotalPrice: 100,
-
-		TicketBookingID: &TicketBooking2.ID,
-	}
-
-	db.FirstOrCreate(&Rent1, entity.Rent{TotalPrice: 40})
-	db.FirstOrCreate(&Rent2, entity.Rent{TotalPrice: 100})
-
-	// ผูก Rent และ Vehicle เข้าด้วยกัน (rent_vehicle)
-	db.Model(&Rent1).Association("Vehicle").Append(&Vehicle1)
-	db.Model(&Rent2).Association("Vehicle").Append(&Vehicle2, &Vehicle1)
-
 }
