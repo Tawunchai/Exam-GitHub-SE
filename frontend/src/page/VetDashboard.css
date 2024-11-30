@@ -1,0 +1,87 @@
+/* .container-background-dashboard {
+  background-color: #F4F4F4;
+  margin: 20px; 
+  border-radius: 20px;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-container-vetdashboard{
+  background-color: #ffffff;
+  width: 250px;
+}
+.HeaderVetdashboard{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    display: flex;
+
+}
+
+.logoutbotton {
+    background-color: #4CAF4F;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 20px;
+    width: 400px;
+    height: 30px;
+    font-size: larger;
+    font-family: 'Inter', sans-serif;
+    
+} */
+
+/* Container สำหรับ Dashboard */
+.container-background-vetdashboard {
+  display: flex; /* ใช้ Flexbox เพื่อจัดการตำแหน่ง */
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar-container-vetdashboard {
+  width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ปรับขนาดปุ่ม Logout */
+.logoutbotton {
+  background-color: #4CAF4F;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20px;
+  font-size: larger;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.logoutbotton:hover {
+  background-color: #45a049;
+}
+
+/* Content */
+.content-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.HeaderVetdashboard {
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.animals {
+  margin-top: 20px;
+}

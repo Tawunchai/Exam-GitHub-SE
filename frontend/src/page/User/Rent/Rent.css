@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    justify-content: space-between; /* จัดตำแหน่งให้ข้อความทางซ้ายและรูปภาพทางขวา */
+    align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    flex-grow: 1; /* ทำให้ข้อความขยายจนเต็มพื้นที่ที่เหลือ */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    margin-right: 10px; 
+  }
+
+.gallery-container {
+    width: 80%; 
+    overflow-x: auto; /* อนุญาตให้เลื่อนในแนวนอน */
+    white-space: nowrap; /* ทำให้เนื้อหาไม่ตัดบรรทัด */
+    padding: 10px 0;
+    box-sizing: border-box;
+    margin-left: auto; 
+    margin-right: 0; /* เอาค่า margin ขวาออก */
+  }
+  
+  /* สไตล์สำหรับแถวของรูปภาพ */
+  .image-row {
+    display: flex;
+    gap: 10px; /* ระยะห่างระหว่างรูป */
+  }
+  
+  /* สไตล์สำหรับรูปภาพ */
+  .image {
+    width: 150px; /* ความกว้างของรูปแต่ละรูป */
+    height: 150px; /* ความสูงของรูปแต่ละรูป */
+    object-fit: cover; /* ปรับรูปให้เต็มพื้นที่โดยไม่เสียสัดส่วน */
+    border-radius: 8px; /* มุมมน */
+  }
+
+  .caption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+  }
+  
