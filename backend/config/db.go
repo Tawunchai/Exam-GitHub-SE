@@ -679,22 +679,11 @@ func SetupDatabase() {
 		BookingID: &Booking3.ID,
 	}
 
-	TicketBooking4 := entity.TicketBooking{
-		VisitDate:        time.Date(2018, 5, 15, 0, 0, 0, 0, time.UTC),
-		QuantityCustomer: 1,
-		TotalPrice:       170,
-		Checking:         false,
-
-		TicketID:  &ticket5.ID,
-		BookingID: &Booking4.ID,
-	}
-
 	db.FirstOrCreate(&TicketBooking1, entity.TicketBooking{QuantityCustomer: 2})
 	db.FirstOrCreate(&TicketBooking2, entity.TicketBooking{QuantityCustomer: 4})
 	db.FirstOrCreate(&TicketBooking3, entity.TicketBooking{QuantityCustomer: 5})
-	db.FirstOrCreate(&TicketBooking4, entity.TicketBooking{QuantityCustomer: 1})
 
 	//Commit Test Master
-	// -- Edit 2 for change branch check
-	// Modifide branch check Gooooo.
+	// OMG test.db Tawunchai
+	// ggggggggggggggggggggggggggggggggggg
 }
