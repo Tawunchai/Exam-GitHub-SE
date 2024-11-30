@@ -695,6 +695,6 @@ func SetupDatabase() {
 	db.FirstOrCreate(&TicketBooking4, entity.TicketBooking{QuantityCustomer: 1})
 
 	//Commit Test Branch
-	// -- change 1 Delete TicketBooking 5 change with branch check
-	//branch test OK!
+	// -- Edit 1 for change branch check
+	// Modifide branch check Gooooo.
 }
