@@ -684,8 +684,6 @@ func SetupDatabase() {
 	db.FirstOrCreate(&TicketBooking3, entity.TicketBooking{QuantityCustomer: 5})
 
 	//Tawunchai Burakhon SUT COMPUTER
-	// Master Branch Merge
-	// Test Merge
-	//555555
-	// React Dev
+	// Modifined Code
+
 }
