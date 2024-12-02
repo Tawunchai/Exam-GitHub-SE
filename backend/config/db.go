@@ -683,8 +683,8 @@ func SetupDatabase() {
 	db.FirstOrCreate(&TicketBooking2, entity.TicketBooking{QuantityCustomer: 4})
 	db.FirstOrCreate(&TicketBooking3, entity.TicketBooking{QuantityCustomer: 5})
 
-	//Commit Test Master
+	//Cwefwef
 	// OMG test.db Tawunchai
-	// Test.bd
-	// OMG
+	// 889899
+	// rthojrthj
 }
