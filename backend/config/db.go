@@ -661,8 +661,8 @@ func SetupDatabase() {
 
 	TicketBooking2 := entity.TicketBooking{
 		VisitDate:        time.Date(2018, 5, 15, 0, 0, 0, 0, time.UTC),
-		QuantityCustomer: 4,
-		TotalPrice:       440,
+		QuantityCustomer: 3,
+		TotalPrice:       580,
 		Checking:         false,
 
 		TicketID:  &ticket3.ID,
@@ -671,8 +671,8 @@ func SetupDatabase() {
 
 	TicketBooking3 := entity.TicketBooking{
 		VisitDate:        time.Date(2018, 5, 15, 0, 0, 0, 0, time.UTC),
-		QuantityCustomer: 5,
-		TotalPrice:       500,
+		QuantityCustomer: 9,
+		TotalPrice:       700,
 		Checking:         false,
 
 		TicketID:  &ticket2.ID,
@@ -683,8 +683,7 @@ func SetupDatabase() {
 	db.FirstOrCreate(&TicketBooking2, entity.TicketBooking{QuantityCustomer: 4})
 	db.FirstOrCreate(&TicketBooking3, entity.TicketBooking{QuantityCustomer: 5})
 
-	//Commit Test Master
-	// OMG test.db Tawunchai
-	// ggggggggggggggggggggggggggggggggggg
-	// COmplete Work 1
+	//Tawunchai Burakhon SUT COMPUTER
+	// Modifined Code
+
 }
