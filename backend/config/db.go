@@ -683,6 +683,7 @@ func SetupDatabase() {
 	db.FirstOrCreate(&TicketBooking2, entity.TicketBooking{QuantityCustomer: 4})
 	db.FirstOrCreate(&TicketBooking3, entity.TicketBooking{QuantityCustomer: 5})
 
-	//Tawunchai Burakhon
+	//Tawunchai Burakhon SUT COMPUTER
 	// Master Branch Merge
+	// Test Merge
 }
